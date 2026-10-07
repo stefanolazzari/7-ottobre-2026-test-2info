@@ -1,0 +1,1 @@
+# 7-ottobre-2026-test-2info
