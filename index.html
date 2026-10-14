@@ -11,9 +11,9 @@
     <h1>Lista dinamica di Cognome</h1>
     <button id="bottone-aggiungi">Aggiungi elemento</button>
     <ul id="lista">
-        <li>elemento 1 <button>🗑️</button></li>
-        <li>elemento 2 <button>🗑️</button></li>
-        <li>elemento 3 <button>🗑️</button></li>
+        <li>elemento 1 <button class="cestino">🗑️</button></li>
+        <li>elemento 2 <button class="cestino">🗑️</button></li>
+        <li>elemento 3 <button class="cestino">🗑️</button></li>
     </ul>
 </div>
 
@@ -37,13 +37,28 @@
     }
 
     #contenitore button{
-        background-color: rgb(255, 219, 233);
-        padding: 3%;
         border-radius: 10px;
         color: black;
     }
+    #contenitore li{
+        border-radius: 10px;
+        background-color: yellow;
+        height: 30px;
+        padding: 2%;
+        margin: 1%;
+    }
+
+    .cestino{
+        float: right;
+    }
+
+    #contenitore ul{
+        background-color: rgb(255, 208, 0);
+        border-radius: 10px;
+        padding-left:5%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        padding-right: 2%;
+    }
 
 </style>
-
-
-

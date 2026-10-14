@@ -8,11 +8,18 @@ function aggiungiElemento(){
     lista.appendChild(nuovoElemento);
 
     let bottoneCestino = document.createElement("button");
+    bottoneCestino.className = "cestino";
     bottoneCestino.innerHTML = "🗑️";
     nuovoElemento.appendChild(bottoneCestino);
 }   
 
+function rimuoviElemento(event){
+    let bottoneCestino = event.target.closest(".cestino");
+    bottoneCestino.closest("li").remove();
+}
+
 bottone.addEventListener("click",aggiungiElemento);
+lista.addEventListener("click", rimuoviElemento);
 
 
 
